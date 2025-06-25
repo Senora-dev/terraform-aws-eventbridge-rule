@@ -22,7 +22,7 @@ This Terraform module creates an AWS EventBridge (CloudWatch Events) rule and it
 
 ```hcl
 module "eventbridge_rule" {
-  source = "path/to/module"
+  source = "Senora-dev/eventbridge-rule/aws"
 
   rule_name        = "my-scheduled-rule"
   schedule_expression = "rate(5 minutes)"
